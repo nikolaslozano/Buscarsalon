@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
         transaction.commit();
 
         FragmentTransaction miManejador = buscarBorrar.beginTransaction();
-        transaction.add(R.id.contenedorFragmentos,buscar);
-        transaction.commit();
+        miManejador.add(R.id.contenedorFragmentos,buscar);
+        miManejador.commit();
     }
 
     public void continuar (View v){
