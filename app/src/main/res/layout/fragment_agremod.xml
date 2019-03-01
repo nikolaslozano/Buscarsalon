@@ -11,78 +11,134 @@
         android:layout_height="match_parent">
 
         <EditText
-            android:id="@+id/textSede"
+            android:id="@+id/textNombre"
             android:layout_width="wrap_content"
             android:layout_height="56dp"
-            android:layout_marginStart="99dp"
-            android:layout_marginLeft="99dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="99dp"
-            android:layout_marginRight="99dp"
-            android:layout_marginBottom="28dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Sede"
-            app:layout_constraintBottom_toTopOf="@+id/textDir"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textNum" />
+            android:inputType="none"
+            tools:layout_editor_absoluteX="128dp"
+            tools:layout_editor_absoluteY="62dp" />
 
         <EditText
-            android:id="@+id/textNum"
+            android:id="@+id/textID"
+            style="@android:style/Widget.DeviceDefault.EditText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="99dp"
-            android:layout_marginLeft="99dp"
-            android:layout_marginTop="136dp"
-            android:layout_marginEnd="99dp"
-            android:layout_marginRight="99dp"
-            android:layout_marginBottom="42dp"
             android:ems="10"
-            android:inputType="number"
-            android:text="Número de Salón"
-            app:layout_constraintBottom_toTopOf="@+id/textSede"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:inputType="none"
+            tools:layout_editor_absoluteX="128dp"
+            tools:layout_editor_absoluteY="16dp" />
 
         <EditText
             android:id="@+id/textDir"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="99dp"
-            android:layout_marginLeft="99dp"
-            android:layout_marginTop="21dp"
-            android:layout_marginEnd="99dp"
-            android:layout_marginRight="99dp"
-            android:layout_marginBottom="65dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Dirección"
-            app:layout_constraintBottom_toTopOf="@+id/botonConti2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textSede" />
+            tools:layout_editor_absoluteX="128dp"
+            tools:layout_editor_absoluteY="118dp" />
+
+        <EditText
+            android:id="@+id/textBr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="128dp"
+            tools:layout_editor_absoluteY="171dp" />
+
+        <EditText
+            android:id="@+id/textLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="128dp"
+            tools:layout_editor_absoluteY="217dp" />
+
+        <EditText
+            android:id="@+id/textLat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="128dp"
+            tools:layout_editor_absoluteY="263dp" />
+
+        <EditText
+            android:id="@+id/textLong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="128dp"
+            tools:layout_editor_absoluteY="309dp" />
 
         <Button
             android:id="@+id/botonConti2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="161dp"
-            android:layout_marginLeft="161dp"
-            android:layout_marginTop="38dp"
-            android:layout_marginEnd="162dp"
-            android:layout_marginRight="162dp"
-            android:layout_marginBottom="260dp"
             android:onClick="continuar"
             android:text="Continuar"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textDir" />
+            tools:layout_editor_absoluteX="141dp"
+            tools:layout_editor_absoluteY="447dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            tools:layout_editor_absoluteX="110dp"
+            tools:layout_editor_absoluteY="29dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="54dp"
+            android:layout_height="22dp"
+            android:text="Nombre"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="82dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="63dp"
+            android:layout_height="21dp"
+            android:text="Dirección"
+            tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="130dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="40dp"
+            android:layout_height="21dp"
+            android:text="Barrio"
+            tools:layout_editor_absoluteX="83dp"
+            tools:layout_editor_absoluteY="185dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="62dp"
+            android:layout_height="21dp"
+            android:text="Localidad"
+            tools:layout_editor_absoluteX="61dp"
+            tools:layout_editor_absoluteY="229dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="46dp"
+            android:layout_height="21dp"
+            android:text="Latitud"
+            tools:layout_editor_absoluteX="77dp"
+            tools:layout_editor_absoluteY="273dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="56dp"
+            android:layout_height="20dp"
+            android:text="Longitud"
+            tools:layout_editor_absoluteX="67dp"
+            tools:layout_editor_absoluteY="321dp" />
+
     </android.support.constraint.ConstraintLayout>
 
 </FrameLayout>
